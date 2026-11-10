@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Portfolio Lab 3</title>
+
+    <!-- Fantasy Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* General Styling */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background: #eaf6ff;
+            color: #35516b;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: #d6edff;
+            border: 2px solid #a9d5f5;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(91, 156, 204, 0.12);
+        }
+
+        .header h1 {
+            letter-spacing: 2px;
+            font-size: 1.8rem;
+            color: #3978a8;
+        }
+
+        .highlight {
+            color: #258bd1;
+            font-weight: bold;
+        }
+
+        /* Main Layout */
+        .main-area {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* Profile Content */
+        .content {
+            flex: 2;
+            background: #ffffff;
+            border: 2px solid #c5e4fa;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(91, 156, 204, 0.10);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            background: #dff1ff;
+            border: 2px solid #b9def7;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #258bd1;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #3978a8;
+            text-decoration: underline;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            border: 2px dashed #9bcdf0;
+            padding: 16px;
+            margin-bottom: 16px;
+            background: #f2f9ff;
+            border-radius: 15px;
+        }
+
+        /* Circular Profile Picture */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #b5ddf8;
+            flex-shrink: 0;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 10px 16px;
+            border-radius: 20px;
+            background: #80c4f0;
+            color: white;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #4da6df;
+            transform: translateY(-2px);
+        }
+
+        /* About This Lab */
+        .introduction {
+            background: #d6edff;
+            border: 2px solid #b5ddf8;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            color: #35516b;
+            box-shadow: 0 4px 10px rgba(91, 156, 204, 0.10);
+        }
+
+        .introduction h2 {
+            color: #3978a8;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #668ba8;
+            background: #d6edff;
+            border-radius: 12px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+
+            .main-area {
+                flex-direction: column;
+            }
+
+            .content,
+            .sidebar {
+                width: 100%;
+            }
+
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+
+            .profile-card {
+                flex-wrap: wrap;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>
+                IT Portfolio
+                <span class="highlight">Lab 3</span>
+            </h1>
+
+            <p>Welcome to my personal portfolio!</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+
+            <div class="main-area">
+
+                <!-- Profile Section -->
+                <section class="content">
+
+                    <div class="profile-card">
+
+                        
+                        <img src="profile-pic.png" alt="Profile Picture">
+                            alt="Lucia Medina profile picture"
+                            class="avatar"
+                        >
+
+                        <div class="profile-info">
+
+                            <h2>Lucia Medina</h2>
+
+                            <p class="tagline">
+                                <span class="highlight">
+                                    Web Developer
+                                </span>
+                                & Student
+                            </p>
+
+                            <p class="bio">
+                                Hello! I'm Lucia Medina, a student who enjoys
+                                creating beautiful and responsive websites.
+                                I love learning about web development,
+                                creativity, and technology.
+                            </p>
+
+                            <a
+                                class="contact-btn"
+                                href="mailto:your-email@example.com"
+                            >
+                                Contact Me
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="modules/module%209.pptx">
+                                Module 9
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="modules/module%2010.ppt">
+                                Module 10
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="modules/module%2011.docx">
+                                Module 11
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </aside>
+
+            </div>
+
+            <!-- About Section -->
+            <section class="introduction">
+
+                <h2>About This Lab</h2>
+
+                <p>
+                    This laboratory activity demonstrates the CSS
+                    box model, including content, padding, border,
+                    and margin. It also explores webpage layouts
+                    using Flexbox and responsive design.
+                </p>
+
+                <p>
+                    Resize your browser to see how the layout
+                    adjusts to different screen sizes.
+                </p>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <p>&copy; 2025 — CSIT Lab</p>
+            <p>Designed with love and creativity.</p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
