@@ -1,0 +1,174 @@
+/* Fantasy Font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background: #eaf6ff;
+    color: #35516b;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #d6edff;
+    border: 2px solid #a9d5f5;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(91, 156, 204, 0.12);
+}
+
+.header h1 {
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    color: #3978a8;
+}
+
+.highlight {
+    color: #258bd1;
+    font-weight: bold;
+}
+
+/* Main Layout */
+.main-area {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Profile Content */
+.content {
+    flex: 2;
+    background: #ffffff;
+    border: 2px solid #c5e4fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(91, 156, 204, 0.10);
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background: #dff1ff;
+    border: 2px solid #b9def7;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    border: 2px dashed #9bcdf0;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #f2f9ff;
+    border-radius: 15px;
+}
+
+/* Circular Profile Picture */
+.avatar {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #b5ddf8;
+    flex-shrink: 0;
+}
+
+/* Contact Button */
+.contact-btn {
+    margin-top: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #80c4f0;
+    color: white;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #4da6df;
+    transform: translateY(-2px);
+}
+
+/* Quick Links */
+.sidebar a {
+    color: #258bd1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #3978a8;
+    text-decoration: underline;
+}
+
+/* About This Lab - Bottom Section */
+.introduction {
+    background: #d6edff;
+    border: 2px solid #b5ddf8;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #35516b;
+    box-shadow: 0 4px 10px rgba(91, 156, 204, 0.10);
+}
+
+.introduction h2 {
+    color: #3978a8;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #668ba8;
+    background: #d6edff;
+    border-radius: 12px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    .main-area {
+        flex-direction: column;
+    }
+
+    .content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-card {
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
