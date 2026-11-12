@@ -1,11 +1,7 @@
-/* Fantasy Font */
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
-/* General Styling */
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: 'MedievalSharp', cursive;
     background: #eaf6ff;
@@ -14,13 +10,10 @@ body {
     padding: 20px;
     margin: 0;
 }
-
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
-
-/* Header */
 header {
     background: #d6edff;
     border: 2px solid #a9d5f5;
@@ -41,15 +34,11 @@ header {
     color: #258bd1;
     font-weight: bold;
 }
-
-/* Main Layout */
 .main-area {
     display: flex;
     gap: 20px;
     align-items: flex-start;
 }
-
-/* Profile Content */
 .content {
     flex: 2;
     background: #ffffff;
@@ -58,8 +47,6 @@ header {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(91, 156, 204, 0.10);
 }
-
-/* Sidebar */
 .sidebar {
     flex: 1;
     background: #dff1ff;
@@ -67,8 +54,6 @@ header {
     padding: 20px;
     border-radius: 15px;
 }
-
-/* Profile Card */
 .profile-card {
     display: flex;
     gap: 18px;
@@ -79,8 +64,6 @@ header {
     background: #f2f9ff;
     border-radius: 15px;
 }
-
-/* Circular Profile Picture */
 .avatar {
     width: 110px;
     height: 110px;
@@ -89,8 +72,6 @@ header {
     border: 4px solid #b5ddf8;
     flex-shrink: 0;
 }
-
-/* Contact Button */
 .contact-btn {
     margin-top: 8px;
     padding: 10px 16px;
@@ -103,13 +84,10 @@ header {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .contact-btn:hover {
     background: #4da6df;
     transform: translateY(-2px);
 }
-
-/* Quick Links */
 .sidebar a {
     color: #258bd1;
     font-weight: bold;
@@ -120,8 +98,6 @@ header {
     color: #3978a8;
     text-decoration: underline;
 }
-
-/* About This Lab - Bottom Section */
 .introduction {
     background: #d6edff;
     border: 2px solid #b5ddf8;
@@ -135,8 +111,6 @@ header {
 .introduction h2 {
     color: #3978a8;
 }
-
-/* Footer */
 .footer {
     text-align: center;
     margin-top: 20px;
@@ -146,14 +120,11 @@ header {
     background: #d6edff;
     border-radius: 12px;
 }
-
-/* Mobile Responsive */
 @media (max-width: 700px) {
 
     .main-area {
         flex-direction: column;
     }
-
     .content,
     .sidebar {
         width: 100%;
